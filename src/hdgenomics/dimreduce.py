@@ -7,9 +7,7 @@ from sklearn.cluster import KMeans
 from sklearn.decomposition import PCA
 
 
-def pca_embedding(
-    X: np.ndarray, n_components: int = 2
-) -> tuple[np.ndarray, np.ndarray]:
+def pca_embedding(X: np.ndarray, n_components: int = 2) -> tuple[np.ndarray, np.ndarray]:
     """Project samples onto their leading principal components.
 
     Args:

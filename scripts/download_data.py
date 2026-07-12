@@ -35,8 +35,10 @@ def try_openml(out_path: Path) -> bool:
     target_col = bunch.target.name
     frame = frame.rename(columns={target_col: "label"})
     frame.to_csv(out_path, index=False)
-    print(f"Downloaded leukemia from OpenML ({frame.shape[0]} samples, "
-          f"{frame.shape[1] - 1} genes) -> {out_path}")
+    print(
+        f"Downloaded leukemia from OpenML ({frame.shape[0]} samples, "
+        f"{frame.shape[1] - 1} genes) -> {out_path}"
+    )
     return True
 
 
@@ -50,8 +52,10 @@ def write_synthetic(out_path: Path) -> None:
             row = [f"{v:.5f}" for v in data.X[i]]
             row.append(data.class_names[data.y[i]])
             writer.writerow(row)
-    print(f"Wrote synthetic fallback dataset ({data.n_samples} samples, "
-          f"{data.n_genes} genes) -> {out_path}")
+    print(
+        f"Wrote synthetic fallback dataset ({data.n_samples} samples, "
+        f"{data.n_genes} genes) -> {out_path}"
+    )
 
 
 def main() -> int:

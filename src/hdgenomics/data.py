@@ -125,10 +125,6 @@ def train_test_split_data(
         n_test = max(1, int(round(test_fraction * len(idx))))
         test_idx.extend(idx[:n_test].tolist())
         train_idx.extend(idx[n_test:].tolist())
-    train = ExpressionData(
-        data.X[train_idx], data.y[train_idx], data.gene_names, data.class_names
-    )
-    test = ExpressionData(
-        data.X[test_idx], data.y[test_idx], data.gene_names, data.class_names
-    )
+    train = ExpressionData(data.X[train_idx], data.y[train_idx], data.gene_names, data.class_names)
+    test = ExpressionData(data.X[test_idx], data.y[test_idx], data.gene_names, data.class_names)
     return train, test
