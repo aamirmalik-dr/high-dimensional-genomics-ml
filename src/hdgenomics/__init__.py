@@ -6,7 +6,7 @@ supervised classification with cross-validation, and per-gene differential
 expression testing with multiple-hypothesis correction.
 """
 
-from hdgenomics.classify import cross_val_classification
+from hdgenomics.classify import compare_models, cross_val_classification
 from hdgenomics.data import (
     ExpressionData,
     load_leukemia,
@@ -29,6 +29,7 @@ __all__ = [
     "benjamini_hochberg",
     "differential_expression",
     "cross_val_classification",
+    "compare_models",
 ]
 
 __version__ = "0.1.0"
