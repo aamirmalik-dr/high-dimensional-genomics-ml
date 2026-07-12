@@ -1,0 +1,41 @@
+{
+  "source": "data/leukemia_sample.csv",
+  "n_samples": 72,
+  "n_genes": 1000,
+  "class_names": [
+    "ALL",
+    "AML"
+  ],
+  "top_genes_used": 1000,
+  "pca_explained_variance": [
+    0.16489190557863848,
+    0.11971528527938095
+  ],
+  "kmeans_adjusted_rand": 0.016441338858215672,
+  "models": {
+    "logreg": {
+      "accuracy_mean": 0.9580952380952381,
+      "accuracy_std": 0.05669667072814179,
+      "f1_macro_mean": 0.954534821903243,
+      "n_splits": 5
+    },
+    "svm": {
+      "accuracy_mean": 0.9438095238095239,
+      "accuracy_std": 0.05323119471421761,
+      "f1_macro_mean": 0.9395615598711574,
+      "n_splits": 5
+    },
+    "rf": {
+      "accuracy_mean": 0.9857142857142858,
+      "accuracy_std": 0.02857142857142856,
+      "f1_macro_mean": 0.983625730994152,
+      "n_splits": 5
+    }
+  },
+  "differential_expression": {
+    "alpha": 0.05,
+    "n_significant": 362,
+    "n_tested": 1000
+  },
+  "seed": 0
+}

@@ -16,10 +16,19 @@ env/
 .coverage
 htmlcov/
 
-# Data and generated artifacts (fetched or produced locally, never committed)
+# Data: ignore the full downloaded matrix, keep the small committed sample.
 data/*
 !data/README.md
-results/
+!data/leukemia_sample.csv
+
+# Generated artifacts: ignore the results directory but keep the committed
+# figures and metrics that back the research note.
+results/*
+!results/pca.png
+!results/volcano.png
+!results/metrics.json
+
+# Model checkpoints
 *.pt
 *.pth
 *.pth.tar
