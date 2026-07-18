@@ -1,7 +1,5 @@
 # high-dimensional-genomics-ml
 
-*Origin: Originally developed for the Data Analysis (MITx 6.419x) online course; refactored and open-sourced in July 2026.*
-
 A small research note, with runnable code, on the classic wide-data problem in
 genomics: many thousands of genes measured across only a few dozen patients. The
 worked example is the Golub leukemia microarray set, 72 patients across 7129
@@ -127,3 +125,7 @@ MIT, see [LICENSE](LICENSE).
 
 Aamir Malik. [GitHub](https://github.com/aamirmalik-dr) ·
 [LinkedIn](https://linkedin.com/in/dr-aamirmalik)
+
+---
+
+*Refactored and engineered into this tested, reproducible project in July 2026, reimplemented from scratch on public data. The underlying methods were first studied in the Data Analysis (MITx 6.419x) course.*
