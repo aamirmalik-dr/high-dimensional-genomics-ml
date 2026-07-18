@@ -1,4 +1,4 @@
-# High-dimensional genomics ML
+# high-dimensional-genomics-ml
 
 *Origin: Originally developed for the Data Analysis (MITx 6.419x) online course; refactored and open-sourced in July 2026.*
 
